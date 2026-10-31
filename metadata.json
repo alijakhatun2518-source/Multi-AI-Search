@@ -1,0 +1,6 @@
+{
+  "name": "Multi-AI Search",
+  "description": "সার্চ বক্সের মাধ্যমে একসাথে ChatGPT, Claude, এবং Gemini-র উত্তর দেখুন।",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

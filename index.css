@@ -1,0 +1,37 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Dynamic colors */
+  --color-app-bg: var(--color-bg-primary);
+  --color-app-sidebar: var(--color-sidebar-bg);
+  --color-card-bg: var(--color-card-bg);
+  --color-text-main: var(--color-text-primary);
+  --color-text-muted: var(--color-text-secondary);
+  --color-border-main: var(--color-border-primary);
+}
+
+:root {
+  --color-bg-primary: #f4f4f5; /* zinc-50 */
+  --color-sidebar-bg: #ffffff; /* white */
+  --color-card-bg: #ffffff; /* white */
+  --color-text-primary: #18181b; /* zinc-900 */
+  --color-text-secondary: #71717a; /* zinc-500 */
+  --color-border-primary: #e4e4e7; /* zinc-200 */
+}
+
+.dark {
+  --color-bg-primary: #09090b; /* zinc-950 */
+  --color-sidebar-bg: #18181b; /* zinc-900 */
+  --color-card-bg: #18181b; /* zinc-900 */
+  --color-text-primary: #f4f4f5; /* zinc-100 */
+  --color-text-secondary: #a1a1aa; /* zinc-400 */
+  --color-border-primary: #27272a; /* zinc-800 */
+}
+
+body {
+  background-color: var(--color-bg-primary);
+  color: var(--color-text-primary);
+  transition: background-color 0.2s, color 0.2s;
+}
